@@ -18,7 +18,7 @@ let formValidation = () => {
     msg.innerHTML = "Task cannot be blank";
   } else {
     console.log("success");
-    Swal.fire("Added Successfully!");
+    Swal.fire("Success!");
     acceptData();
     add.setAttribute("data-bs-dismiss", "modal");
     add.click();
