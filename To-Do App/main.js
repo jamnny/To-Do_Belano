@@ -67,15 +67,7 @@ let createTasks = () => {
 let deleteTask = (e) => {
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id, 1);
-  localStorage.setItem("data", JSON.stringify(data));
-  Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Your work has been deleted",
-    showConfirmButton: false,
-    timer: 1500
-  });
-  
+  localStorage.setItem("data", JSON.stringify(data)); 
 };
 
 let editTask = (e) => {
