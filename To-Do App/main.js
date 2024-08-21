@@ -6,6 +6,7 @@ let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
 
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   formValidation();
@@ -17,7 +18,7 @@ let formValidation = () => {
     msg.innerHTML = "Task cannot be blank";
   } else {
     console.log("success");
-    msg.innerHTML = "";
+    Swal.fire("Added Successfully!");
     acceptData();
     add.setAttribute("data-bs-dismiss", "modal");
     add.click();
